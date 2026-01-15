@@ -19,14 +19,15 @@ function App() {
 
   return (
     <>
-      {/* <Navbar/>
-      <Heading name="Rajat" age="30"/>
-      <Heading name="Chetan" age="30"/>
-      <Heading name="Abhishek" age="30"/>
-      <Button clickFunction={showAlert} name="Rajat" age="25"/>
+      {/* <Navbar/> */}
+      {/* <Heading name="Rajat" age="30"/>
+      <Heading name="Chetan" age="23"/>
+      <Heading name="Abhishek" age="467"/> */}
+
+      {/* <Button clickFunction={showAlert} name="Rajat" age="25"/>
       <Counter/> */}
       
-      <BasicHooks/>
+      <BasicHooks />
     </>
   );
 }
