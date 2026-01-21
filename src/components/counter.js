@@ -1,7 +1,20 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 function Counter() {
   const [count, setCount] = useState(0);
+  
+  useEffect(()=>{
+    console.log("Component Loaded");
+
+    return function(){
+      console.log("Component unmounted");
+    }
+  },[])
+
+  useEffect(()=>{
+    console.log("Component updated",count);
+  },[count])
+
   return (
     <div>
       <h2>Count: {count}</h2>

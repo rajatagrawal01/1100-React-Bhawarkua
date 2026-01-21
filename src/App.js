@@ -6,6 +6,10 @@ import Heading from "./components/Heading.js";
 import Button from "./components/ButtonClick.js";
 import Counter from "./components/counter.js";
 import BasicHooks from "./components/BasicHooks.js";
+import JsonTable from "./components/JsonTable.js";
+import JsonTableCrud from "./components/JsonTableCrud.js";
+import BasicEffect from "./components/BasicEffect.js";
+import { useState } from "react";
 
 
 function App() {
@@ -16,7 +20,7 @@ function App() {
   //   function showAlert(){
   //     alert("Hello");
   //   }
-
+  const [visibility,setVisibility]=useState(true)
   return (
     <>
       {/* <Navbar/> */}
@@ -27,7 +31,13 @@ function App() {
       {/* <Button clickFunction={showAlert} name="Rajat" age="25"/>
       <Counter/> */}
       
-      <BasicHooks />
+      {/* <BasicHooks /> */}
+      {/* <JsonTable/> */}
+      {/* <JsonTableCrud/> */}
+      {/* <BasicEffect/> */}
+      {visibility? <Counter/>:""}
+     
+      <button onClick={()=>setVisibility(!visibility)} >Toggle</button>
     </>
   );
 }
