@@ -10,6 +10,8 @@ import JsonTable from "./components/JsonTable.js";
 import JsonTableCrud from "./components/JsonTableCrud.js";
 import BasicEffect from "./components/BasicEffect.js";
 import { useState } from "react";
+import ApiCall from "./components/ApiCall.js";
+import ApiCallAsync from "./components/ApiCallAsync.js"
 
 
 function App() {
@@ -35,9 +37,11 @@ function App() {
       {/* <JsonTable/> */}
       {/* <JsonTableCrud/> */}
       {/* <BasicEffect/> */}
-      {visibility? <Counter/>:""}
+      {/* {visibility? <Counter/>:""}
      
-      <button onClick={()=>setVisibility(!visibility)} >Toggle</button>
+      <button onClick={()=>setVisibility(!visibility)} >Toggle</button> */}
+      {/* <ApiCall/> */}
+      <ApiCallAsync/>
     </>
   );
 }
