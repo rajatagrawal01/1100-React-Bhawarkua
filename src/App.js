@@ -12,6 +12,8 @@ import BasicEffect from "./components/BasicEffect.js";
 import { useState } from "react";
 import ApiCall from "./components/ApiCall.js";
 import ApiCallAsync from "./components/ApiCallAsync.js"
+import ReducerComp from "./components/ReducerComp.js"
+import AdvReducer from "./components/AdvReducer.js"
 
 
 function App() {
@@ -41,7 +43,9 @@ function App() {
      
       <button onClick={()=>setVisibility(!visibility)} >Toggle</button> */}
       {/* <ApiCall/> */}
-      <ApiCallAsync/>
+      {/* <ApiCallAsync/> */}
+      {/* <ReducerComp/> */}
+      <AdvReducer/>
     </>
   );
 }
