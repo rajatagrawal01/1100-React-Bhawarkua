@@ -14,6 +14,7 @@ import ApiCall from "./components/ApiCall.js";
 import ApiCallAsync from "./components/ApiCallAsync.js"
 import ReducerComp from "./components/ReducerComp.js"
 import AdvReducer from "./components/AdvReducer.js"
+import PropDrilling from "./components/propDrilling.js"
 
 
 function App() {
@@ -45,7 +46,8 @@ function App() {
       {/* <ApiCall/> */}
       {/* <ApiCallAsync/> */}
       {/* <ReducerComp/> */}
-      <AdvReducer/>
+      {/* <AdvReducer/> */}
+      <PropDrilling/>
     </>
   );
 }
