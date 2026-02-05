@@ -38,7 +38,7 @@ function App() {
       
       {/* <BasicHooks /> */}
       {/* <JsonTable/> */}
-      {/* <JsonTableCrud/> */}
+      <JsonTableCrud/>
       {/* <BasicEffect/> */}
       {/* {visibility? <Counter/>:""}
      
@@ -47,7 +47,7 @@ function App() {
       {/* <ApiCallAsync/> */}
       {/* <ReducerComp/> */}
       {/* <AdvReducer/> */}
-      <PropDrilling/>
+      {/* <PropDrilling/> */}
     </>
   );
 }

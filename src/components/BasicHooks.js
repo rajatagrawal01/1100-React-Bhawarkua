@@ -15,8 +15,8 @@ export default function BasicHooks() {
       Name:<input type='text' onChange={(e)=>setInputText(e.target.value)}/>
       Age:<input type='number' onChange={(e)=>setInputAge(e.target.value)}/>
 
-      <button onClick={()=>setHeadingName(inputText)}>Click Here to change</button>
-      <button onClick={()=>setHeadingAge(inputAge)}>Click Here to change</button>
+      <button onClick={()=>setHeadingName(inputText)}>Click Here to change Name</button>
+      <button onClick={()=>setHeadingAge(inputAge)}>Click Here to change Age</button>
 
     </div>
   )
