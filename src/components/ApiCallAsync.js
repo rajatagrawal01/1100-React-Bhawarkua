@@ -22,7 +22,6 @@ export default function ApiCallAsync() {
 
   console.log(apiData);
   
-
   if(loading){
     return(
     <>

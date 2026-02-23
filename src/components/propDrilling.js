@@ -4,7 +4,7 @@ export default function PropDrilling() {
   return (
     <div>
       <h1>This is component 1</h1>
-      <ChildComponent text="Hello class" />
+      <ChildComponent text="Rajat" />
     </div>
   );
 }
@@ -19,7 +19,7 @@ const ChildComponent = (props) => {
 const GrandChildComponent = (props) => {
   return (
     <div>
-      <h1>This is component 3</h1>
+      <h1>This is component 3 </h1>
       <GreatGrandChildComponent text={props.text} />
     </div>
   );
@@ -27,7 +27,7 @@ const GrandChildComponent = (props) => {
 const GreatGrandChildComponent = (props) => {
   return (
     <div>
-      <h1>This is component 3, {props.text}! how are you?</h1>
+      <h1>This is component 4, {props.text}! how are you?</h1>
     </div>
   );
 };

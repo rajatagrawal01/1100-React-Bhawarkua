@@ -66,7 +66,7 @@ export default function JsonTable() {
               </tr>
             </thead>
 
-            <tbody>
+            <tbody border='1'>
               {tableData.map((item, index) => (
                 <tr key={index}>
                   <td>{item.name}</td>

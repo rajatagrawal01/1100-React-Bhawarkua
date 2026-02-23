@@ -16,17 +16,25 @@ import ReducerComp from "./components/ReducerComp.js";
 import AdvReducer from "./components/AdvReducer.js";
 import PropDrilling from "./components/propDrilling.js";
 import Redirect from "./components/Redirect.js";
-import { BrowserRouter} from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
-
   const [visibility, setVisibility] = useState(true);
+
   return (
-    <BrowserRouter>
+    <>
+      {/* <BrowserRouter>
       <>
         <Redirect />
       </>
     </BrowserRouter>
+    <ApiCallAsync/> */}
+      <PropDrilling />
+
+      <button onClick={() => setVisibility(!visibility)}>Toggle Button</button>
+
+      {visibility ? <Counter /> : ""}
+    </>
   );
 }
 
