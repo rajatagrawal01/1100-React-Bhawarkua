@@ -1,18 +1,19 @@
-import { useState,useEffect } from "react";
+import { useState,useEffect,useRef } from "react";
 
 function Counter() {
   const [count, setCount] = useState(0);
-  
+  var a= useRef(0)
   useEffect(()=>{
     console.log("Component Loaded");
-
     return function(){
       console.log("Component unmounted");
     }
   },[])
 
   useEffect(()=>{
+    a.current=a.current+1
     console.log("Component updated",count);
+    console.log("Current value of a is: ",a.current);
   },[count])
 
   return (

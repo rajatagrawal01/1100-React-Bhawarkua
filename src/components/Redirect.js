@@ -5,14 +5,12 @@ import About from './About'
 import Contact from './Contact'
 import User from "./User.js";
 
-
-
 export default function Redirect() {
   return (
     <div className='container'>
         <nav>
-            <Link to="/Home">Home</Link>
-            <Link to="/About">About</Link>
+            <Link to="/Home">Home</Link><br/>
+            <Link to="/About">About</Link><br/>
             <Link to="/Contact">Contact</Link>
         </nav>
         <Routes>

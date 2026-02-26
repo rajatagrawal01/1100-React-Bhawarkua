@@ -18,22 +18,31 @@ import PropDrilling from "./components/propDrilling.js";
 import Redirect from "./components/Redirect.js";
 import { BrowserRouter } from "react-router-dom";
 
+
 function App() {
   const [visibility, setVisibility] = useState(true);
 
   return (
     <>
+
+    {/* <Heading name="Sakshi" age="25"/> */}
+    <PropDrilling/>
+
+
       {/* <BrowserRouter>
       <>
         <Redirect />
       </>
-    </BrowserRouter>
-    <ApiCallAsync/> */}
-      <PropDrilling />
+    </BrowserRouter> */}
 
-      <button onClick={() => setVisibility(!visibility)}>Toggle Button</button>
 
-      {visibility ? <Counter /> : ""}
+    
+    {/* <ApiCallAsync/> */}
+      {/* <PropDrilling /> */}
+
+      {/* <button onClick={() => setVisibility(!visibility)}>Toggle Button</button>
+
+      {visibility ? <Counter /> : ""} */}
     </>
   );
 }
